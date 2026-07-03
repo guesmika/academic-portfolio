@@ -1,0 +1,202 @@
+/* =========================================================
+   PROFESSOR KAMEL GUESMI - BASE STYLES
+   Phase 1 - Foundation Layer
+   base.css
+========================================================= */
+body {
+    opacity: 0;
+    animation: pageLoad 0.8s ease forwards;
+}
+
+@keyframes pageLoad {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   RESET & GLOBAL STYLES
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-md);
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================================
+   SELECTION STYLE
+========================================================= */
+
+::selection {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* =========================================================
+   SCROLLBAR (Premium Look)
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
+
+/* =========================================================
+   UTILITIES
+========================================================= */
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.section-padding {
+    padding: var(--space-9) 0;
+}
+
+/* =========================================================
+   BUTTON BASE STYLE
+========================================================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    transition: var(--transition-normal);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background: var(--accent-color);
+    color: white;
+}
+
+.btn-accent:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   CARD BASE STYLE
+========================================================= */
+
+.card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* =========================================================
+   ANIMATION READY STATE
+========================================================= */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+* {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+

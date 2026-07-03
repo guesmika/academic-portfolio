@@ -1,0 +1,363 @@
+/* =========================================================
+   PROFESSOR KAMEL GUESMI - COMPONENT SYSTEM
+   Phase 1 - UI Components Layer
+   components.css
+========================================================= */
+
+/* =========================================================
+   HERO CONTENT STYLES
+========================================================= */
+
+.hero-title {
+    font-size: var(--font-size-5xl);
+    font-weight: 800;
+    color: white;
+    margin-bottom: var(--space-4);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-xl);
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: var(--space-6);
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-full);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-4);
+}
+
+/* =========================================================
+   STATISTIC CARDS
+========================================================= */
+
+.stat-card {
+    text-align: center;
+    padding: var(--space-6);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-number {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    color: var(--text-muted);
+    margin-top: var(--space-2);
+}
+
+/* =========================================================
+   RESEARCH CARDS
+========================================================= */
+
+.research-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    background: var(--bg-secondary);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    padding: var(--space-6);
+}
+
+.research-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--accent-color)
+    );
+}
+
+.research-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* =========================================================
+   PUBLICATION CARDS
+========================================================= */
+
+.publication-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-color);
+}
+
+.publication-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.publication-title {
+    font-weight: 700;
+    margin-bottom: var(--space-3);
+}
+
+.publication-meta {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   TIMELINE COMPONENT
+========================================================= */
+
+.timeline {
+    position: relative;
+    padding-left: var(--space-6);
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--space-7);
+    padding-left: var(--space-5);
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 3px solid white;
+}
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.profile-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-normal);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   BUTTONS (ENHANCED)
+========================================================= */
+
+.btn-glow {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 28px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-glow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: var(--transition-normal);
+}
+
+.btn-glow:hover::after {
+    left: 100%;
+}
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.badge-academic {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+}
+
+/* =========================================================
+   SECTION DIVIDER
+========================================================= */
+
+.section-divider {
+    height: 80px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--primary-color),
+        transparent
+    );
+    opacity: 0.1;
+}
+
+/* =========================================================
+   HOVER ANIMATIONS
+========================================================= */
+
+.hover-lift {
+    transition: var(--transition-normal);
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+}
+
+/* =========================================================
+   GLASS EFFECT CARD
+========================================================= */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.floating-shapes span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+.floating-shapes span:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.floating-shapes span:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation-delay: 2s;
+}
+
+.floating-shapes span:nth-child(3) {
+    top: 40%;
+    left: 50%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0px); }
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #ffffff, #f3f6fa);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    z-index: 9999;
+    transition: width 0.2s ease;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursor-outline {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.1s ease;
+}
+
+.publication-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.publication-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transition: width 0.6s ease;
+}
+
+.publication-card:hover::after {
+    width: 100%;
+}
+
+

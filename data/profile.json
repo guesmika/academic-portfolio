@@ -1,0 +1,23 @@
+{
+  "name": "Prof. Kamel Guesmi",
+  "title": "Professor of Automatic Control and Intelligent Systems",
+  "institution": "University of Djelfa",
+  "location": "Djelfa, Algeria",
+  "email": "your.email@univ.dz",
+
+  "summary": "Expert in nonlinear control systems, intelligent optimization, renewable energy systems, artificial intelligence, and advanced power electronics.",
+
+  "social": {
+    "google_scholar": "#",
+    "orcid": "#",
+    "researchgate": "#",
+    "linkedin": "#"
+  },
+
+  "stats": {
+    "publications": 120,
+    "experience_years": 25,
+    "students": 40,
+    "projects": 15
+  }
+}

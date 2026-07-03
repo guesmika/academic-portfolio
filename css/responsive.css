@@ -1,0 +1,157 @@
+/* =========================================================
+   PROFESSOR KAMEL GUESMI - RESPONSIVE DESIGN SYSTEM
+   Phase 1 - Mobile & Adaptive Layer
+   responsive.css
+========================================================= */
+
+/* =========================================================
+   LARGE SCREENS (1200px+)
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* =========================================================
+   DESKTOP (992px - 1199px)
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =========================================================
+   TABLETS (768px - 991px)
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        text-align: center;
+        padding: var(--space-8) var(--space-5);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline {
+        padding-left: var(--space-5);
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* =========================================================
+   MOBILE (576px - 767px)
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-md);
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .stat-card {
+        margin-bottom: var(--space-5);
+    }
+
+    .navbar {
+        height: auto;
+        padding: var(--space-3);
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE (≤576px)
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .hero-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .hero-section {
+        padding: var(--space-7) var(--space-4);
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: var(--space-3);
+    }
+
+    .section-header h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .container {
+        padding: 0 var(--space-4);
+    }
+
+    .timeline {
+        padding-left: var(--space-4);
+    }
+}
+
+/* =========================================================
+   TOUCH OPTIMIZATION (MOBILE UX)
+========================================================= */
+
+@media (hover: none) {
+
+    .card:hover,
+    .research-card:hover,
+    .stat-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+}

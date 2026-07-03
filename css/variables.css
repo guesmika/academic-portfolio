@@ -1,0 +1,102 @@
+/* =========================================================
+   PROFESSOR KAMEL GUESMI - DESIGN SYSTEM
+   Variables.css
+   Phase 1 - Foundation Layer
+========================================================= */
+
+:root {
+
+    /* =====================================================
+       COLOR SYSTEM
+    ===================================================== */
+
+    --primary-color: #0B1F3A;        /* Oxford Blue */
+    --secondary-color: #1F4E79;      /* Deep Academic Blue */
+    --accent-color: #C9A227;         /* Academic Gold */
+
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #FFFFFF;
+    --bg-dark: #0B1F3A;
+
+    --text-primary: #1E293B;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+
+    --border-color: #E2E8F0;
+
+    /* =====================================================
+       TYPOGRAPHY
+    ===================================================== */
+
+    --font-heading: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 3rem;
+    --font-size-5xl: 4rem;
+
+    /* =====================================================
+       SPACING SYSTEM (8px GRID)
+    ===================================================== */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 96px;
+    --space-10: 128px;
+
+    /* =====================================================
+       BORDER RADIUS
+    ===================================================== */
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --radius-full: 999px;
+
+    /* =====================================================
+       SHADOWS (SOFT ACADEMIC STYLE)
+    ===================================================== */
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 30px 60px rgba(0, 0, 0, 0.16);
+
+    /* =====================================================
+       TRANSITIONS
+    ===================================================== */
+
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.4s ease-in-out;
+    --transition-slow: 0.6s ease-in-out;
+
+    /* =====================================================
+       LAYOUT
+    ===================================================== */
+
+    --container-width: 1320px;
+    --header-height: 80px;
+
+    /* =====================================================
+       Z-INDEX SCALE
+    ===================================================== */
+
+    --z-navbar: 1000;
+    --z-overlay: 1100;
+    --z-modal: 1200;
+
+}

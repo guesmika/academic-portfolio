@@ -1,0 +1,37 @@
+/* =========================================================
+   DARK MODE THEME
+========================================================= */
+
+[data-theme="dark"] {
+
+    --bg-primary: #0B1220;
+    --bg-secondary: #111A2E;
+
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    --border-color: #1F2A44;
+
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Dark mode cards */
+[data-theme="dark"] .card,
+[data-theme="dark"] .research-card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .publication-card {
+
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+/* Dark navbar */
+[data-theme="dark"] .navbar {
+    background: rgba(10, 15, 30, 0.7);
+}
+
+[data-theme="dark"] body {
+    transition: all 0.4s ease;
+}

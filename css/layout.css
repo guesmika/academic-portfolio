@@ -1,0 +1,206 @@
+/* =========================================================
+   PROFESSOR KAMEL GUESMI - LAYOUT SYSTEM
+   Phase 1 - Structure Layer
+   layout.css
+========================================================= */
+
+/* =========================================================
+   SECTION BASE STRUCTURE
+========================================================= */
+
+section {
+    padding: var(--space-9) 0;
+    position: relative;
+}
+
+/* Alternate section backgrounds */
+section:nth-child(even) {
+    background-color: var(--bg-primary);
+}
+
+section:nth-child(odd) {
+    background-color: var(--bg-secondary);
+}
+
+/* =========================================================
+   NAVIGATION BAR (GLASSMORPHISM STYLE)
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    z-index: var(--z-navbar);
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition-normal);
+}
+
+.navbar.scrolled {
+    box-shadow: var(--shadow-md);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================================================
+   HERO SECTION LAYOUT
+========================================================= */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background effect */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(201, 162, 39, 0.15);
+    border-radius: 50%;
+    top: -200px;
+    right: -200px;
+    filter: blur(80px);
+}
+
+/* =========================================================
+   GRID SYSTEM ENHANCEMENT
+========================================================= */
+
+.grid {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* =========================================================
+   FLEX UTILITIES
+========================================================= */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================================================
+   CONTAINER VARIANTS
+========================================================= */
+
+.container-narrow {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--space-5);
+}
+
+.container-wide {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--space-5);
+}
+
+/* =========================================================
+   STICKY EFFECTS
+========================================================= */
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* =========================================================
+   SECTION HEADERS
+========================================================= */
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-4);
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   RESPONSIVE BEHAVIOR BASE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: var(--space-8) var(--space-4);
+    }
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
